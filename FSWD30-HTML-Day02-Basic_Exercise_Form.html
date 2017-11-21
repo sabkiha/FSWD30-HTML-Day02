@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Registration Form</title>
 </head>
 <body>
-	
+	<h1>Please complete our registration form</h1>
+	<form action="action_page.php">
+		 First name:<br>
+  	<input type="text" name="firstname" placeholder="First name"><br>
+ 	 Last name:<br>
+ 	 <input type="text" name="lastname"  placeholder="Last name"><br>
+ 	 <br>
+  <input type="radio" name="status" value="student" checked> student<br>
+  <input type="radio" name="status" value="guest"> guest<br>
+  <input type="radio" name="status" value="other"> other
+  <br><br>
+  Why are you here?
+   <select name="reason for being here">
+   <option value="work">work</option>
+  <option value="fun" selected>fun</option>
+  <option value=""other">other</option>
+</select><br>
+<br>
+Your quote for the day. <br>
+ <textarea name="quote for the day" rows="10" cols="30">                                
+How do you feel?
+</textarea><br><br>
+<input type="submit" value="Submit data">
+	</form>
 </body>
 </html>
